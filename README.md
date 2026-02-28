@@ -1,82 +1,96 @@
-# Trio Delights – MERN Stack Restaurant App
+#  Trio Delights – MERN Stack Restaurant App
 
-A full-stack restaurant booking and ordering application built using the MERN stack.
+A full-stack restaurant booking and ordering application built using the MERN stack (MongoDB, Express.js, React.js, Node.js).
 
-## Features
-
-- Table booking system
-- Food ordering with cart & checkout
-- Booking details summary
-- MongoDB database integration
-- REST API using Express
-- Responsive React frontend
+This system allows users to book tables and place food orders through a responsive frontend interface connected to a RESTful backend API.
 
 ---
 
-## Tech Stack
+##  Features
 
-Frontend:
+-  Table booking system  
+-  Food ordering with cart & checkout  
+-  Booking details summary  
+-  MongoDB database integration  
+-  REST API using Express  
+-  Responsive React frontend  
+
+---
+
+##  Tech Stack
+
+### Frontend
 - React.js
 - CSS
 
-Backend:
+### Backend
 - Node.js
 - Express.js
 
-Database:
+### Database
 - MongoDB
 
 ---
 
-## Project Structure
+##  Project Structure
 
-trio-delights-mern/
+```
+trio-delights-mern
 │
-├── client/ (React frontend)
-└── server/ (Node + Express backend)
-
+├── client   # React frontend
+└── server   # Node + Express backend
+```
 ---
 
-## Setup Instructions
+##  Setup Instructions
 
-### Backend
+### 1️ Backend Setup
 
-cd server  
-npm install  
+```bash
+cd server
+npm install
 
-Create a `.env` file inside server folder:
+Create a .env file inside the server folder:
 
-MONGO_URI=your_mongodb_connection  
-PORT=5000  
+MONGO_URI=your_mongodb_connection
+PORT=5000
 
-node server.js  
+#Run the backend:
 
----
+node server.js
+2️⃣ Frontend Setup
+cd client
+npm install
+npm start
 
-### Frontend
+Frontend runs on:
+http://localhost:3000
 
-cd client  
-npm install  
-npm start  
+Backend runs on:
+http://localhost:5000
 
----
+ #API Endpoint
 
-## API Endpoint
+POST /api/book
 
-POST /api/book  
-Used to store booking information in MongoDB.
+Stores booking information in MongoDB.
 
----
+ #Future Improvements
 
-## Future Improvements
+Prevent double table booking using database-level validation
 
--  Prevent double table booking using database-level validation (compound unique index on table, date, and time).
--  Add booking cancellation feature with DELETE API endpoint.
--  Build an admin dashboard to manage bookings and food orders.
--  Integrate online payment gateway (e.g., Razorpay) for secure order confirmation.
--  Add JWT-based authentication for user login and role-based access control.
-- Add booking availability visualization to dynamically disable reserved time slots.
+Add booking cancellation feature
 
-## Author
+Build an admin dashboard
+
+Integrate payment gateway (Razorpay / Stripe)
+
+Add JWT authentication
+
+Implement role-based access control
+
+Add booking availability visualization
+
+#Author
 
 K S Anagha
