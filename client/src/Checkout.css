@@ -1,0 +1,103 @@
+:root {
+  --bg: #0b0b0b;
+  --card: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.15);
+  --gold: #d4af37;
+  --white: #ffffff;
+  --muted: #cfcfcf;
+}
+
+.checkout-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.checkout-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 25px;
+}
+
+/* Card */
+.checkout-card {
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+/* Empty cart */
+.empty-msg {
+  padding: 28px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 12px;
+}
+
+/* Table */
+.checkout-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.checkout-table th {
+  padding: 12px 10px;
+  color: var(--gold);
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.checkout-table td {
+  padding: 12px 10px;
+  color: var(--white);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Total */
+.checkout-total {
+  font-size: 1.3rem;
+  color: var(--white);
+  font-weight: 600;
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* Place Order Button */
+.place-btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--gold);
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 20px;
+  font-size: 1.05rem;
+}
+
+.place-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .checkout-title {
+    font-size: 1.7rem;
+  }
+
+  .checkout-table th,
+  .checkout-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .checkout-total {
+    font-size: 1.15rem;
+  }
+}
