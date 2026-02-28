@@ -68,6 +68,15 @@ Used to store booking information in MongoDB.
 
 ---
 
+## Future Improvements
+
+-  Prevent double table booking using database-level validation (compound unique index on table, date, and time).
+-  Add booking cancellation feature with DELETE API endpoint.
+-  Build an admin dashboard to manage bookings and food orders.
+-  Integrate online payment gateway (e.g., Razorpay) for secure order confirmation.
+-  Add JWT-based authentication for user login and role-based access control.
+- Add booking availability visualization to dynamically disable reserved time slots.
+
 ## Author
 
 K S Anagha
