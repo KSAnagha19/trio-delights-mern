@@ -54,14 +54,19 @@ Create a .env file inside the server folder:
 
 MONGO_URI=your_mongodb_connection
 PORT=5000
-
+```
 #Run the backend:
 
+```bash
 node server.js
+```
 2️⃣ Frontend Setup
+
+```bash
 cd client
 npm install
 npm start
+```
 
 Frontend runs on:
 http://localhost:3000
